@@ -19,8 +19,9 @@ The interface point between the package and the user is the Model Class. An inst
 w=Model()
 ```
 Each model instance has a set of system attributes, policy attributes and optimization parameters.
+
 ##### System Attributes
-System attributes include, among others, PV and battery system size. Other parameters, such as battery efficiencies etc.. can be changed in the parametrs.yaml file. 
+System attributes include, among others, PV and battery system size. Other parameters, such as battery efficiencies etc.. can be changed in the parameters.yaml file. 
 
 Battery and PV size can be set as follows:
 
@@ -35,6 +36,7 @@ w.PV.update_parameters() #updates from default YAML file
 
 w.Battery.update_parameters('customFile.yaml') #updates from custom YAML File
 ```
+
 ##### Policy Attributes  
 For each instance of Model there exists a specific regulatory regime made up of:
 * RTP: Real Time Electricity Pricing
