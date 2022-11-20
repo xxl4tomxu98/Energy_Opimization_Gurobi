@@ -14,7 +14,6 @@ totalLoad = import_Load(path_Load)
 
 class _InputSetter:
 
-
     def __init__(self, duration=24, day=1, loadRow=0):
         self.PV = PV()
         self.Battery = Battery()
@@ -25,7 +24,6 @@ class _InputSetter:
         self.__timeDuration = duration
         self.__day = day
         self.loadRow = loadRow
-
 
     @property
     def pvGenList(self):
@@ -91,7 +89,6 @@ class _InputSetter:
             loadRow = self.loadRow
         if day is None or duration is None or loadRow is None:
             raise ValueError("Please set day, duration and load Row")
-
         try:
             if loadRow == -1:  ## LOAD ROW -1 gives average load row
                 hours = (day - 1) * 24

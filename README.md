@@ -65,7 +65,7 @@ With the aforementioned parameters the Model can be optimized:
 print(w.opt) #returns the dispatch as a DataFrame 
 print(w.revenue) #returns the revenue 
 ``` 
-Additional parameters can be computed such as **MAI**, **IRR**, etc.. The **MAI** stands for **M**arket **A**lignment **I**ndicator which measures the performance of a certain instrument mixes in comparison to an ideal case  
+Additional parameters can be computed such as **MAI**, **IRR**, etc. The **MAI** stands for **Market Alignment Indicator** which measures the performance of a certain instrument mixes in comparison to an ideal case  
 
 
  
